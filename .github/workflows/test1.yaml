@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     
     steps:
       - name: Checkout code
@@ -20,13 +20,12 @@ jobs:
           java-version: '17'  # 根据您的项目需求选择合适的JDK版本  
           distribution: 'temurin'  # 或者选择其他JDK分发版，如'zulu'、'adopt'等  
 
-      - name: Set up Gradle
-        uses: gradle/actions/setup-gradle@latest  # 使用Gradle官方提供的预设操作来设置Gradle环境  
+      - name: Build with Gradle
+        run: ./gradlew.bat build
+        shell: cmd  # 指定使用CMD shell来运行命令  
 
 
-      - name: Build project with Gradle
-        run: ./gradlew build  # 使用Gradle Wrapper来构建项目  
-
-      - name: Run tests with Gradle
-        run: ./gradlew test  # 使用Gradle Wrapper来运行测试  
+      - name: Test with Gradle
+        run: ./gradlew.bat test
+        shell: cmd  # 指定使用CMD shell来运行命令
 
