@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91a1d34e-b82e-45d0-9248-c85067d7a7fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ud-vertx/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ud-vertx/src/main/java/com/bsy/udvertx/MyLauncher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ud-vertx/src/main/java/com/bsy/udvertx/Verticle1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ud-vertx/src/main/resources/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ud-vertx/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +63,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ud-vertx" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -167,7 +152,7 @@
       <updated>1728547389308</updated>
       <workItem from="1728547390376" duration="4419000" />
       <workItem from="1728551829706" duration="674000" />
-      <workItem from="1728606190124" duration="1441000" />
+      <workItem from="1728606190124" duration="3302000" />
     </task>
     <servers />
   </component>
