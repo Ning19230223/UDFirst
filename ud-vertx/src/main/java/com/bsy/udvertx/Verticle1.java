@@ -20,7 +20,7 @@ public class Verticle1 extends AbstractVerticle {
     public void start() throws Exception {
         // 读取配置文件
         int port = config().getInteger("port", 8080);
-        String filePath = config().getString("file-uploads", "no path");
+        String filePath = config().getString("file-uploads", "D:/file-uploads/");
 
         // 定义路由器
         Router router = Router.router(vertx);
@@ -74,7 +74,7 @@ public class Verticle1 extends AbstractVerticle {
                                 .put("fileName", originalFileName)
                                 .put("fileUid", UID)
                                 .put("fileSize", fileSize)
-                                .put("download url", "http://localhost:9017/download/" + UID);
+                                .put("download url", "http://localhost:" + String.valueOf(port) + "/download/" + UID);
                         // 将Json对象写到客户端前台
                         ctx.response()
                                 .putHeader("Content-Type", "application/json")
@@ -121,8 +121,9 @@ public class Verticle1 extends AbstractVerticle {
             String deleteContentPath = suffixO(filePath + uid);
             File fileN = new File(deleteNamePath);
             File fileO = new File(deleteContentPath);
-            fileN.delete();
-            fileO.delete();
+            boolean isDelete1 = fileN.delete();
+            boolean isDelete2 = fileO.delete();
+            System.out.println(isDelete1 && isDelete2);
             ctx.response().end("Successfully deleted.");
         });
 
