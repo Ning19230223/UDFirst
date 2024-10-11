@@ -22,8 +22,7 @@ jobs:
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@latest  # 使用Gradle官方提供的预设操作来设置Gradle环境  
-        with:
-          gradle-version: '7.4.2'  # 根据您的项目需求选择合适的Gradle版本  
+
 
       - name: Build project with Gradle
         run: ./gradlew build  # 使用Gradle Wrapper来构建项目  
@@ -31,9 +30,3 @@ jobs:
       - name: Run tests with Gradle
         run: ./gradlew test  # 使用Gradle Wrapper来运行测试  
 
-      - name: Upload test results for failed tests (optional)
-        if: failure()  # 仅在测试失败时上传结果  
-        uses: actions/upload-artifact@v3
-        with:
-          name: test-results
-          path: build/test-results/test  # 根据您的Gradle配置调整路径
